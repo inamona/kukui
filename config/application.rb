@@ -31,5 +31,7 @@ module Kukui
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    config.x.cors_allowed_origins = ENV['CORS_ALLOWED_ORIGINS']
   end
 end

@@ -1,0 +1,7 @@
+language: ruby
+rvm:
+  - 2.6.0
+install:
+  - bundle install
+script:
+  - bundle exec rspec
